@@ -147,7 +147,7 @@ class BevSlices(bev_generator.BevGenerator):
                 # Apply slice filter
                 slice_points = all_points[slice_filter]
 
-                if len(slice_points) > 0:  # Should probably apply the fix for empty BEV slices
+                if len(slice_points) >= 0:  # Should probably apply the fix for empty BEV slices
                     # Create Voxel Grid 2D
                     voxel_grid_2d = VoxelGrid2D()
                     voxel_grid_2d.voxelize_2d(
@@ -169,7 +169,7 @@ class BevSlices(bev_generator.BevGenerator):
 
             cloud_points = all_points[cloud_filter]
 
-            if len(cloud_points > 0):
+            if len(cloud_points >= 0):
                 # Create Voxel Grid 2D
                 voxel_grid_2d = VoxelGrid2D()
                 voxel_grid_2d.voxelize_2d(
