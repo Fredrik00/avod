@@ -1,6 +1,31 @@
+
 # Aggregate View Object Detection
-[1]: https://travis-ci.com/kujason/avod
-[![Build Status](https://travis-ci.com/kujason/avod.svg?token=q1CfB5VfAVvKxUyudP69&branch=master)][1]
+
+## Changes to the original AVOD architecture
+In this repository, we have investigated several LIDAR feature map representations and how they perform compared to the ones used by Kujason et.al in 
+[**Joint 3D Proposal Generation and Object Detection from View Aggregation**](https://arxiv.org/abs/1712.02294). 
+Our changes are described in detail in [**Multimodal 3D Object Detection from Simulated Pretraining**](https://arxiv.org/abs/1905.07754). If you use our code, please cite our paper, in addition to the original AVOD paper: 
+```
+@article{brekke2019multimodal,
+  title={Multimodal 3D Object Detection from Simulated Pretraining},
+  author={Brekke, {\AA}smund and Vatsendvik, Fredrik and Lindseth, Frank},
+  journal={arXiv preprint arXiv:1905.07754},
+  year={2019}
+}
+```
+```
+@article{ku2018joint, 
+  title={Joint 3D Proposal Generation and Object Detection from View Aggregation}, 
+  author={Ku, Jason and Mozifian, Melissa and Lee, Jungwook and Harakeh, Ali and Waslander, Steven}, 
+  journal={IROS}, 
+  year={2018}
+}
+```
+
+
+## Acknowledgements
+This repository is forked from [AVOD-FPN](https://github.com/kujason/avod). The original README follows below. 
+
 
 This repository contains the public release of the Python implementation of our Aggregate View Object Detection (AVOD) network for 3D object detection.
 
