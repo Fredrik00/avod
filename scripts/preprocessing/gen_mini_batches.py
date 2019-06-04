@@ -96,7 +96,7 @@ def main(dataset=None):
     all_dataset_config_path = avod.root_dir() + \
         '/configs/mb_preprocessing/all.config'
     carped_dataset_config_path = avod.root_dir() + \
-        '/configs/mb_preprocessing/carped.config'
+        '/configs/mb_preprocessing/carped/carla_carped.config'
     per_dataset_config_path = avod.root_dir() + \
         '/configs/mb_preprocessing/person.config'
 
@@ -106,12 +106,12 @@ def main(dataset=None):
     # Serial vs parallel processing
     in_parallel = True
 
-    process_car = True   # Cars
+    process_car = False   # Cars
     process_ped = False # Pedestrians
     process_cyc = False  # Cyclists
     process_ppl = False   # People (Pedestrians + Cyclists)
     process_all = False # Cars + Pedestrians + Cyclists
-    process_carped = False # Cars + Pedestrians
+    process_carped = True # Cars + Pedestrians
     process_per = False   # Person (Pedestrians + Cyclists joint class)
 
     # Number of child processes to fork, samples will
