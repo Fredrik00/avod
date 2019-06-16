@@ -50,6 +50,13 @@ For our experiments on simulated pre-training, some manual changes must be done 
 - Start training as described above. AVOD will print which checkpoint is restored and the configuration file can be set to store summary_img_images such that training on the correct dataset can be validated using tensorboard and the log file generated with the model files.
 
 
+## Pre-trained models and CADET dataset
+Our CADET dataset used for testing can be downloaded from: https://studntnu.sharepoint.com/:u:/s/teamsite2/10199/EfudfwtiCqFOqUcFWTKcUkEBCJeIQIYHGT83_dRQA4w2fQ?e=IfzAqE 
+Pre-trained models for AVOD can be downloaded from:  
+https://studntnu.sharepoint.com/:f:/s/teamsite2/10199/Ek3vSVACVppIuxvJa7MaAE0B2OK-7UVeJA9Cp7prHwdvgA
+NOTE: Models may be configured to point to the incorrect dataset due to testing. Not all tested models are included above, and more will be uploaded in following weeks.
+
+
 ## Acknowledgements
 This repository is forked from [AVOD-FPN](https://github.com/kujason/avod). The original README follows below. 
 
